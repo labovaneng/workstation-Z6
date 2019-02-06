@@ -5,4 +5,4 @@
 
 Set-Location -Path C:\Users\ENG\AppData\Local\Temp
 
-wget https://raw.githubusercontent.com/labovaneng/workstation-Z6/master/startup.ps1 -OutFile update.ps1
+https://raw.githubusercontent.com/labovaneng/workstation-Z6/master/startupZ6new
