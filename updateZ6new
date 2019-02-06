@@ -17,6 +17,7 @@ choco install -y bleachbit
 choco uninstall -y ccleaner
 choco install -y rclone
 
+#functie ot is uitgeschakeld
 function OT{
     Set-Location $env:TEMP
     $OT = Test-Path "C:\Users\ENG\Desktop\Allerlei nuttige dingen\OT.zip"
@@ -48,7 +49,7 @@ function OT{
     
     }
 }
-
+#functie DHD is uitgeschakeld
 function DHD{
     Set-Location $env:TEMP
     $DHD = Test-Path "C:\Users\ENG\Desktop\Allerlei nuttige dingen\DHD_config_instellingen3.pdf"
@@ -100,7 +101,7 @@ function ReplaceLaadSettings{
         Write-Host 'Settings downloaded'
     }
 }
-
+#functie download documentatie is uitgeschakeld
 function DownloadDocumentatie{
     Set-Location $env:TEMP
         
@@ -187,7 +188,7 @@ function Presets{
                 
             }
 }
-
+#presetmediaencoder is uitgeschakeld
 function PresetsMediaEncoder{
     Set-Location $env:TEMP
     $FunctionID = "Presets"
@@ -278,6 +279,7 @@ function ClearAdobeExport{
 		Get-ChildItem -Path $path -Recurse -Force | Where-Object { $_.PSIsContainer -and (Get-ChildItem -Path $_.FullName -Recurse -Force | Where-Object { !$_.PSIsContainer }) -eq $null } | Remove-Item -Force -Recurse
 }
 
+#functie settingsGUI is uitgeschakeld
 function SettingsGUI{
 	Set-Location $env:TEMP
     
@@ -364,10 +366,8 @@ function ClearAdobeMediaCache{
 		Get-ChildItem -Path $AdobeProjects -Recurse -Force | Where-Object { $_.PSIsContainer -and (Get-ChildItem -Path $_.FullName -Recurse -Force | Where-Object { !$_.PSIsContainer }) -eq $null } | Remove-Item -Force -Recurse
  }
 	
-    ClearAdobeMediaCache
-	SettingsGUI
+        ClearAdobeMediaCache
 	ClearAdobeExport
-    PresetsMediaEncoder
 	Presets
 	UpdateApps
 	Remove-DesktopItems
