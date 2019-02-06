@@ -5,4 +5,4 @@
 
 Set-Location -Path C:\Users\ENG\AppData\Local\Temp
 
-https://raw.githubusercontent.com/labovaneng/workstation-Z6/71bdb50a0fba3d4b10700e76f35d650a57f81520/updateZ6new
+wget https://raw.githubusercontent.com/labovaneng/workstation-Z6/71bdb50a0fba3d4b10700e76f35d650a57f81520/updateZ6new
