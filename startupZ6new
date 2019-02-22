@@ -3,6 +3,6 @@
 #Write-Host "Update Startup"
 #iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattiewae/update/master/zbook15/startup.ps1'))
 
-Set-Location -Path C:\Users\ENG\AppData\Local\Temp
+Set-Location -Path c:\Users\ENG\AppData\Local\Temp
 
-wget https://raw.githubusercontent.com/labovaneng/workstation-Z6/71bdb50a0fba3d4b10700e76f35d650a57f81520/updateZ6new
+wget https://raw.githubusercontent.com/labovaneng/workstation-Z6/master/updateZ6new -OutFile update.ps1
