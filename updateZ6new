@@ -299,7 +299,7 @@ function SettingsGUI{
 	if($SettingsGUI_TEMP -eq $false){
         try{
             [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-            Invoke-WebRequest -Uri https://github.com/mattiewae/update/blob/master/AdobePresets/LaadSettingsGUI_V2.exe?raw=true -OutFile LaadSettingsGUI_V2.exe -ErrorAction Stop
+            Invoke-WebRequest -Uri https://github.com/labovaneng/algemeenDocu/blob/master/LaadSettingsGUI_V2.exe?raw=true -OutFile LaadSettingsGUI_V2.exe -ErrorAction Stop
             Write-Host "GUI gedownload"
         }
         Catch{
