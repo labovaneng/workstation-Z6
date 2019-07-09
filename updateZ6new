@@ -366,7 +366,7 @@ function ClearAdobeMediaCache{
 		Get-ChildItem -Path $AdobeProjects -Recurse -Force | Where-Object { $_.PSIsContainer -and (Get-ChildItem -Path $_.FullName -Recurse -Force | Where-Object { !$_.PSIsContainer }) -eq $null } | Remove-Item -Force -Recurse
  }
 	
-        ClearAdobeMediaCache
+        #ClearAdobeMediaCache
 	ClearAdobeExport
 	UpdateApps
 	Remove-DesktopItems
